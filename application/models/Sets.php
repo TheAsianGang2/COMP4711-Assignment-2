@@ -11,7 +11,7 @@
  *
  * @author Owner
  */
-class Sets extends CSV_Model {
+class Sets extends Entity {
     
     //id of set (acts as primary key)
     public $id;

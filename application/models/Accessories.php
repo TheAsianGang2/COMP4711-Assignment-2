@@ -5,7 +5,8 @@
  *
  * @author Owner
  */
-class Accessories extends CSV_Model{
+//class Accessories extends CSV_Model{
+class Accessories extends Entity{
     
     //id (acts as primary key)
     public $id;
