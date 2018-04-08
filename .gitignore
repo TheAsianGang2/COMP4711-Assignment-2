@@ -16,3 +16,5 @@ application/logs/*
 !application/logs/.htaccess
 /nbproject/private/
 /nbproject/
+
+*/tmp/
