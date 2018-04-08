@@ -7,16 +7,17 @@ Team Members:
 - Philip Shin
 - Yan Wang
 
+## Version 2.2---Release Date: Apr 08, 2018---
 
+Add and edit sets
 
-## Version 2.0---Release Date: Mar 05, 2018---
-
-Added dropdown menu to switch user roles 
-
-
-## Version 2.1---Release Date: Feb 12, 2018---
+## Version 2.1---Release Date: Apr 07, 2018---
 
 Add Entity Models
+
+## Version 2.0---Release Date: Apr 05, 2018---
+
+Added dropdown menu to switch user roles 
 
 ## Version 1.9---Release Date: Feb 12, 2018---
 
