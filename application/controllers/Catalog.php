@@ -26,6 +26,16 @@ class Catalog extends Application {
      */
 
     function index() {
+
+        $role = $this->session->userdata('userrole');
+        if ($role == ROLE_ADMIN) {
+            $this->data['MtceA'] = '<a href="/EditAccessory/Index" role="button" class="btn btn-info">Accessory</a>';
+            $this->data['MtceC'] = '<a href="/Catalog/Index" role="button" class="btn btn-primary">Category</a>';
+        } else {
+            $this->data['MtceA'] = '';
+            $this->data['MtceC'] = '';
+        }
+
         //Retrieve csv data
         $accessories = $this->Accessories->all();
         $categories = $this->Categories->all();
@@ -34,9 +44,11 @@ class Catalog extends Application {
         $this->data['accessories'] = $accessories;
         $this->data['categories'] = $categories;
 
+
         //Set pagebody and page title, render
         $this->data['pagebody'] = 'catalog';
         $this->data['pagetitle'] = 'Catalog';
         $this->render();
     }
+
 }

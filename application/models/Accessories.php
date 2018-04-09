@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Description of Accessories
  *
  * @author Owner
  */
-class Accessories extends CSV_Model{
-    
+class Accessories extends CSV_Model {
+
     //id (acts as primary key)
     public $id;
     //category id (acts as foreign key)
@@ -20,12 +21,22 @@ class Accessories extends CSV_Model{
     public $protection;
     //weight stat of accessory
     public $weight;
-    
+
     /*
      * Accessories model constructor
      */
-    public function __construct()
-    {
+
+    public function __construct() {
         parent::__construct('../data/Accessories.csv', 'id');
     }
+
+    public function rules() {
+        $config = array(
+                ['field' => 'damage', 'label' => 'secondary', 'rules' => 'integer|less_than[100]'],
+                ['field' => 'protection', 'label' => 'secondary', 'rules' => 'integer|less_than[100]'],
+                ['field' => 'weight', 'label' => 'secondary', 'rules' => 'integer|less_than[100]'],
+        );
+        return $config;
+    }
+
 }
