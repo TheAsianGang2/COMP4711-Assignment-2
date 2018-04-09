@@ -135,4 +135,4 @@ $autoload['language'] = array();
 
 
 //Custom model autoloader for .csv's
-$autoload['model'] = array('Accessories', 'Categories', 'Sets');
+$autoload['model'] = array('Accessories', 'Categories', 'Sets', 'Accessory', 'Category', 'Set');

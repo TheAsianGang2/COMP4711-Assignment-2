@@ -25,17 +25,19 @@ class Application extends CI_Controller
 		$this->data = array ();
 		$this->data['pagetitle'] = 'CodeIgniter3.1 Starter 4';
 		$this->data['ci_version'] = (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '';
-	}
+		$this->data['userrole'] = $this->session->userdata('userrole') != null ? $this->session->userdata('userrole') : 'Guest';
+    }
 
 	/**
 	 * Render this page
 	 */
 	function render($template = 'template')
 	{
+        $this->data['header'] = $this->parser->parse('_menubar', $this->config->item('menu_config'), true);
 		$this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
-                //Header template parser includes custom menu config for navigation
-                $this->data['header'] = $this->parser->parse('header', $this->config->item('menu_config'), true);
-		$this->parser->parse('template', $this->data);
+        //Header template parser includes custom menu config for navigation
+        //$this->data['header'] = $this->parser->parse('header', $this->config->item('menu_config'), true);
+        $this->parser->parse('template', $this->data);
 	}
 
 }

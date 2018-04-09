@@ -7,6 +7,8 @@
             <li><a href="/Welcome/set/{id}"> {name}</a></li>
         {/sets}
       </ul>
+        {add}
+        {edit}
     </div>
     
     <div class="imgParent">

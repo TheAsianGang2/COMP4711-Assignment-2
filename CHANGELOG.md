@@ -5,6 +5,27 @@ Team Members:
 - Ken Dao
 - Inochi Tanaka
 - Philip Shin
+- Yan Wang
+
+## Version 2.4---Release Date: Apr 08, 2018---
+
+Edit accessories and categories (simple)
+
+## Version 2.3---Release Date: Apr 08, 2018---
+
+Edit and add sets
+
+## Version 2.2---Release Date: Apr 07, 2018---
+
+Add Entity Models
+
+## Version 2.1---Release Date: Apr 05, 2018---
+
+Added dropdown menu to switch user roles 
+
+## Version 2.0---Release Date: Feb 12, 2018---
+
+Start Assignment 2
 
 ## Version 1.9---Release Date: Feb 12, 2018---
 
